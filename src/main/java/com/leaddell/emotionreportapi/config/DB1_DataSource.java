@@ -35,8 +35,10 @@ public class DB1_DataSource {
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         HashMap<String, Object> properties = new HashMap<>();
-        properties.put("spring.jpa.properties.hibernate.dialect", env.getProperty("spring.jpa.properties.hibernate.dialect"));
-        properties.put("hibernate.show-sql", env.getProperty("spring.jpa.show-sql"));
+        properties.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
+        properties.put("hibernate.show-sql", env.getProperty("jdbc.show-sql"));
+//        properties.put("spring.jpa.hibernate.ddl-auto", env.getProperty("spring.jpa.hibernate.ddl-auto"));
+        properties.put("spring.jpa.show-sql", env.getProperty("spring.jpa.show-sql"));
         em.setJpaPropertyMap(properties);
         return em;
     }

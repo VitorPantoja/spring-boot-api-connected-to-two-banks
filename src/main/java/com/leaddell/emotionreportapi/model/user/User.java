@@ -1,9 +1,12 @@
 package com.leaddell.emotionreportapi.model.user;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
-@Table(schema = "users")
+@Table(name = "user", schema = "public")
+@Data
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
