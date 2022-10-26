@@ -1,7 +1,7 @@
-package com.leaddell.emotionreportapi.service;
+package com.multipledb.api.service;
 
-import com.leaddell.emotionreportapi.model.product.Product;
-import com.leaddell.emotionreportapi.repository.product.ProductRepository;
+import com.multipledb.api.model.product.Product;
+import com.multipledb.api.repository.product.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

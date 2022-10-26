@@ -1,4 +1,4 @@
-package com.leaddell.emotionreportapi.model.user;
+package com.multipledb.api.model.user;
 
 import lombok.Data;
 

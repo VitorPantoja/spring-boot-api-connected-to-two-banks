@@ -1,4 +1,4 @@
-package com.leaddell.emotionreportapi.model.user;
+package com.multipledb.api.model.product;
 
 import lombok.Data;
 
@@ -7,11 +7,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "raul", schema = "public")
+@Table(schema = "public")
 @Data
-public class Raul {
+public class Product {
+
     @Id
     private int id;
 
     private String name;
+
+    private double price;
 }

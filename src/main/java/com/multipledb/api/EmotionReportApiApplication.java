@@ -1,15 +1,12 @@
-package com.leaddell.emotionreportapi;
+package com.multipledb.api;
 
-import com.leaddell.emotionreportapi.model.product.Product;
-import com.leaddell.emotionreportapi.model.user.User;
-import com.leaddell.emotionreportapi.repository.user.UserRepository;
-import com.leaddell.emotionreportapi.service.ProductService;
-import com.leaddell.emotionreportapi.service.UserService;
+import com.multipledb.api.model.product.Product;
+import com.multipledb.api.model.user.User;
+import com.multipledb.api.service.ProductService;
+import com.multipledb.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
-package com.leaddell.emotionreportapi.repository.user;
+package com.multipledb.api.repository.user;
 
-import com.leaddell.emotionreportapi.model.user.User;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.multipledb.api.model.user.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
